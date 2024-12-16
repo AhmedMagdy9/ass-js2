@@ -9,63 +9,137 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>my Quotes App</title>
+    <title>my weather</title>
     <meta name="keywords" content="grid">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
    <script src="js/bootstrap.bundle.min.js"></script>
-   
-    
-
+ 
+  
 
 </head>
 <body>
-    
-    
-  
-  <div class="container  text-center">
 
-    <h1 class="text-center fw-bolder mt-5 "><span class="text-primary"> Quote </span> of the Day</h1>
-    <p class="text-center mt-5">Press the button below to recieve a random <span class="text-primary">quote!</span></p>
-
-  <button onclick="QuotesRand ()" class="btn btn-outline-primary px-5 py-3 mt-5 ">New Quote</button>
-
-  <div  class="mt-5  d-flex justify-content-center ">
-
-   
-    <div  class="fonte-fam">
-
-  <p id="demo"></p>
-
-
-  <div class="d-flex justify-content-center  align-items-center">
-    <div class="me-5" id="item">
-      <!-- img here               -->
+  <nav class="navbar navbar-expand-lg  py-5">             
+    <div class="container w-75">
+      <div class="d-flex align-items-center navImg">
+      <img src="img/imgapi1 (1).png" alt="">
+      <div class="ms-2">
+      <a class="text-decoration-none fs-5" href="#"> weather</a>
+      <p class="text-secondary">tagline goes here</p>
     </div>
+    </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+       
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link me-3 active " aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link me-3" href="#">news</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link me-3" href="#">live cameras</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link me-3" href="#">photos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link me-3" href="#">contact</a>
+          </li>
+        </ul>
+       
+      </div>
+    </div>
+  </nav>
 
-    <p id="demo2"></p>
-   
-  </div>
+  <div class="bgImg py-5">
+    <div class="container w-75">
+      <form class="formLoction position-relative  ">
+  <input id="btnSearch" placeholder="Find your location" type="text">
+  <input id="submit" value="Find" type="button">
+</form>
 
+<div  class="row ">
+  <div class="col-lg-4">
+  <label class="text-white mb-2  " for="selectObtion">Language</label>
+  <select name="language" class="form-select  "  id="selectObtion">
+    <option value="eng">English</option>
+    <option value="ar">عربي</option>
+    <option value="fr">france</option>
+  </select>
+</div>
+  <div class=" col-lg-4 offset-lg-4">
+  <label class="text-white mb-2  " for="selectObtionday">Choose the number of forecast days</label>
+  <select class="form-select " id="selectObtionday" >
+    <option value="3">3 day</option>
+    <option value="4">4 day</option>
+    <option value="5">5 day</option>
+    <option value="6">6 day</option>
+    <option value="7">7 day</option>
+    
+  </select>
 </div>
 
-  </div>
-  </div>
+
  
+</div>
 
-
-
-  <div id="item2" class="mt-5  ">
-
-  
-
+</div>
   </div>
+
+  <div class="detels  pb-5" >
+  <div class="container w-75  trans ">
+    <div class="row  " id="myrow">
 
      
+    
 
+      
+    </div>
+
+
+    
+  </div>
+
+
+</div>
+ 
+<footer class="py-5">
+
+  <div class="container w-75 ">
+<div class="d-flex justify-content-between align-items-center ">
+  <div class=" w-75">
+ <form class="position-relative">
+<input placeholder="Enter your email to subscribe..." type="text">
+<input id="subscribe" value="subscribe" type="button">
+</form>
+</div>
+<div class=" w-25 text-center ">
+  <a target="_blank"  href="https://www.facebook.com"><i class="fa-brands fa-facebook-f me-3 fs-4"></i></a>
+  <a target="_blank"  href="https://www.x.com"><i class="fa-brands fa-twitter me-3 fs-4"></i></a>
+  <a target="_blank" href="https://www.google.com"><i class="fa-brands fa-google-plus-g me-3 fs-4"></i></a>
+  <a target="_blank" href="https://www.pinterest.com"><i class="fa-brands fa-pinterest me-3 fs-4"></i></a>
+</div>
+
+</div>
+<p class="text-white mt-5">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+  </div>
+      
+</footer>
+
+
+
+
+
+
+ 
    
-
+  
 
   <script src="js/index.js"></script>
 </body>
